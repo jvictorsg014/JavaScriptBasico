@@ -17,12 +17,20 @@
         let operando2
 
         //solicitando o primeiro operando
-        operando1 = prompt("Digite o primeiro número")
+        operando1 = parseFloat(prompt("Digite o primeiro número"));
 
         //solicitando o segundo operando
-        operando2 = prompt("Digite o segundo número")
+        operando2 = parseFloat(prompt("Digite o segundo número"));
 
-        document.write(`Adição: ${operando1} + ${operando2} =  ${operando1 + operando2}`); 
+        document.write(`Adição: ${operando1} + ${operando2} = ${operando1 + operando2}<br>`);
+        document.write(`Subtração: ${operando1} - ${operando2} = ${operando1 - operando2}<br>`);
+        document.write(`Multiplicação: ${operando1} * ${operando2} = ${operando1 * operando2}<br>`);
+        document.write(`Divisão: ${operando1} / ${operando2} = ${operando1 / operando2}<br>`);
+        document.write(`Resto da Divisão: ${operando1} % ${operando2} = ${operando1 % operando2}<br>`);
+        document.write(`Exponenciação: ${operando1} elevado a ${operando2} = ${operando1 ** operando2}<br>`);
+        document.write(`Unário de Incremento: ${operando1} após incrementar = ${++operando1}<br>`);
+        document.write(`Unário de Decremento: ${operando1} após decrementar = ${--operando1}<br>`);
+
 
     </script>
 </body>
